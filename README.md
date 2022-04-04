@@ -1,65 +1,65 @@
 # Login
-## Giriş Yapmak
+## Login
 ```url
  {url}/api/v1/<auth_token>/<school_code>/login/
 ```
 
 # Read
-## Sınıfın Verilerini Cekme
+## Retrieving Class Data
 ```url
  {url}/api/v1/<auth_token>/<school_code>/login/read/<_class>/
 ```
 
 # Push
-## Okulun Sınıflarını Oluşturma
+## Creating the School's Classes
 ```url
  {url}/api/v1/<auth_token>/<school_code>/login/push/classes/<classes>
 ```
- - ```classes```: Tüm Sınıflar
+ - ```classes```: All Classes
 
-### Kullanım
- - ```<branch_number>=<branch_name>```: Sınıf Numarası İle Sınıf İsmi Arasında "=" Belirtin,
- - ```branch_number>=<branch_name>&<branch_number2>=<branch_name2>```: Sınıf Bilgileri Arasına "&" Ekleyin
+### Use
+ - ```<branch_number>=<branch_name>```: Specify "=" Between Class Number and Class Name
+ - ```branch_number>=<branch_name>&<branch_number2>=<branch_name2>```: Add "&" Between Class Information
 
 
-## Sınıfın Ders Programını Girme
+## Entering the Class Schedule
 ```url
  {url}/api/v1/<auth_token>/<school_code>/login/push/class_data/<class>/<lessonId>/<day1>/<day2>/<day3>/<day4>/<day5>/<day1Teacher>/<day2Teacher>/<day3Teacher>/<day4Teacher>/<day5Teacher>/
 ```
- - ```/class```: Sınıf Numarası İle Sınıf İsmi (Arasında Boşluk Olmadan)
- - ```/lessonId```: Kacıncı Ders Olduğu
- - ```/day1```: 1. Günki x. Ders
- - ```/day2```: 2. Günki x. Ders
- - ```/day3```: 3. Günki x. Ders
- - ```/day4```: 4. Günki x. Ders
- - ```/day5```: 5. Günki x. Ders
- - ```/day1Teacher```: 1. Günki x. Dersin Öğretmeni 
- - ```/day2Teacher```: 2. Günki x. Dersin Öğretmeni 
- - ```/day3Teacher```: 3. Günki x. Dersin Öğretmeni 
- - ```/day4Teacher```: 4. Günki x. Dersin Öğretmeni 
- - ```/day5Teacher```: 5. Günki x. Dersin Öğretmeni 
+ - ```/class```: Class Number and Class Name (Without Spaces)
+ - ```/lessonId```: How Many Lessons Is It?
+ - ```/day1```: Day 1 x. lesson
+ - ```/day2```: Day 2 x. lesson
+ - ```/day3```: Day 3 x. lesson
+ - ```/day4```: Day 4 x. lesson
+ - ```/day5```: Day 5 x. lesson
+ - ```/day1Teacher```: Day 1 x. Teacher of the Course
+ - ```/day2Teacher```: Day 2 x. Teacher of the Course
+ - ```/day3Teacher```: Day 3 x. Teacher of the Course
+ - ```/day4Teacher```: Day 4 x. Teacher of the Course
+ - ```/day5Teacher```: Day 5 x. Teacher of the Course
 
 
 # Update
-## Sınıfın Ders Programını Güncelleme
+## Updating the Class Schedule
 ```url
  /api/v1/<auth_token>/<school_code>/login/update/class_data/<class>/<lessonId>/<day1>/<day2>/<day3>/<day4>/<day5>/<day1Teacher>/<day2Teacher>/<day3Teacher>/<day4Teacher>/<day5Teacher>/
 ```
- - ```/class```: Sınıf Numarası İle Sınıf İsmi (Arasında Boşluk Olmadan)
- - ```/lessonId```: Kacıncı Ders Olduğu
- - ```/day1```: 1. Günki x. Ders
- - ```/day2```: 2. Günki x. Ders
- - ```/day3```: 3. Günki x. Ders
- - ```/day4```: 4. Günki x. Ders
- - ```/day5```: 5. Günki x. Ders
- - ```/day1Teacher```: 1. Günki x. Dersin Öğretmeni 
- - ```/day2Teacher```: 2. Günki x. Dersin Öğretmeni 
- - ```/day3Teacher```: 3. Günki x. Dersin Öğretmeni 
- - ```/day4Teacher```: 4. Günki x. Dersin Öğretmeni 
- - ```/day5Teacher```: 5. Günki x. Dersin Öğretmeni
+ - ```/class```: Class Number and Class Name (Without Spaces)
+ - ```/lessonId```: How Many Lessons Is It?
+ - ```/day1```: Day 1 x. lesson
+ - ```/day2```: Day 2 x. lesson
+ - ```/day3```: Day 3 x. lesson
+ - ```/day4```: Day 4 x. lesson
+ - ```/day5```: Day 5 x. lesson
+ - ```/day1Teacher```: Day 1 x. Teacher of the Course
+ - ```/day2Teacher```: Day 2 x. Teacher of the Course
+ - ```/day3Teacher```: Day 3 x. Teacher of the Course
+ - ```/day4Teacher```: Day 4 x. Teacher of the Course
+ - ```/day5Teacher```: Day 5 x. Teacher of the Course
 
 
 
 # Developer
- - [fireganqQ](https://github.com/fireganqQ) Geliştirmeler İçin Teşekkür Ederiz.
+ - [fireganqQ](https://github.com/fireganqQ) Thank you for the improvements.
  - **Teknofest2022**
